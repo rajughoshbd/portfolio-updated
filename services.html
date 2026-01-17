@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raju Ghosh - SEO Expert in Bangladesh</title>
+
+    <link rel="icon" href="/image/favicon.ico" type="image/icon" />
+
+    <!-- Font Awesome (6+ works) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/services.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-container">
+      <div class="nav-container">
+        <a href="/index.html">
+            <img src="/image/website-logo-raju-ghosh.svg" alt="logo" />
+        </a>
+
+        <nav class="nav-menu">
+          <ul>
+            <li>
+              <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li><a href="/about.html">About</a></li>
+            <li class="nav-item dropdown">
+              <a href="/services.html">
+                Services <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#services">SEO Audit</a></li>
+                <li><a href="#services">On-Page SEO</a></li>
+                <li><a href="#services">Off-Page SEO</a></li>
+                <li><a href="#services">Local SEO</a></li>
+              </ul>
+            </li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <div class="getstarted">
+            <a href="#getstarted">Get Started</a>
+          </div>
+        </nav>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          id="hamburger"
+          class="hamburger"
+          aria-label="Toggle menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <ul>
+          <li>
+            <a href="/index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+          <li><a href="/about.html">About</a></li>
+          <li class="nav-item dropdown">
+            <a href="/services.html" class="dropdown-toggle">
+              Services <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#seo-audit">SEO Audit</a></li>
+              <li><a href="#onpage">On-Page SEO</a></li>
+              <li><a href="#offpage">Off-Page SEO</a></li>
+              <li><a href="#local">Local SEO</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <div class="getstarted"><a href="#getstarted">Get Started</a></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  <!-- Services Section -->
+  <section class="services-page">
+    <div class="container">
+      <h2 class="section-title">My SEO Services</h2>
+      <p class="section-subtitle">Comprehensive, ethical, and growth-focused SEO strategies tailored for your business.</p>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <h3>Technical SEO Audit</h3>
+          <p>In-depth site analysis to fix crawl errors, boost website speed, and optimize technical performance for better rankings.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <h3>On-Page SEO Optimization</h3>
+          <p>Optimize metadata, headings, URL structure, schema, and content for maximum search engine visibility.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <h3>Entity-Based SEO</h3>
+          <p>Leverage semantic SEO to connect your business with relevant entities and enhance topical authority.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <h3>Generative SEO (AI Content Strategy)</h3>
+          <p>AI-powered content strategies designed to attract, engage, and convert high-quality traffic.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card">
+          <h3>Local SEO & GMB Optimization</h3>
+          <p>Boost your local presence with Google Business Profile optimization and local citation building.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card">
+          <h3>Link Building & Digital PR</h3>
+          <p>Secure high-quality backlinks and execute digital PR campaigns to strengthen domain authority and brand trust.</p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-card">
+          <h3>E-Commerce SEO</h3>
+          <p>Entity-based and NLP-optimized strategies for product visibility, category rankings, and higher online sales.</p>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-card">
+          <h3>YouTube SEO</h3>
+          <p>Video optimization strategies to grow your YouTube channel, improve ranking, and increase audience engagement.</p>
+        </div>
+      </div>
+
+      <div class="cta-center">
+        <a href="contact.html" class="btn-primary">Let’s Work Together</a>
+      </div>
+    </div>
+  </section>
+  <!-- Sticky WhatsApp Button -->
+    <a href="javascript:void(0)" class="whatsapp-float" id="whatsappBtn">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- WhatsApp Popup -->
+    <div id="whatsappPopup" class="whatsapp-popup">
+      <div class="popup-content">
+        <span id="closePopup" class="close">&times;</span>
+        <h3>Chat on WhatsApp</h3>
+        <input type="text" id="waName" placeholder="Your Name" />
+        <textarea id="waMessage" placeholder="Your Message"></textarea>
+        <button id="sendMessage">Send</button>
+      </div>
+    </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Raju Ghosh. All rights reserved.</p>
+  </footer>
+  <script src="/scripts.js"></script>
+</body>
+</html>
