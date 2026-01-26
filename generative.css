@@ -1,68 +1,67 @@
-/* ===============================
-   GENERATIVE SEO HERO – CLEAN V2
-   =============================== */
+/* =====================================
+   GENERATIVE SEO HERO (2000x2000 SAFE)
+   ===================================== */
 
 .hero {
   background: transparent;
-  padding: 100px 0;
+  padding: 110px 0;
 }
 
 .hero-container {
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0 24px;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: 460px 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 60px;
+  column-gap: 64px;
 }
 
-/* ===============================
-   HERO IMAGE (LEFT)
-   =============================== */
+/* =====================================
+   MAIN HERO IMAGE
+   ===================================== */
 
 .hero-image {
-  flex: 0 0 42%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 420px;   /* STRICT LIMIT */
-  height: auto;
-  object-fit: contain;
-  border-radius: 18px;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  max-width: 460px;          /* VISUAL LIMIT */
+  aspect-ratio: 1 / 1;      /* FORCE SQUARE */
+  object-fit: cover;        /* PERFECT FOR 2000x2000 */
+  border-radius: 22px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.18);
 }
 
-/* ===============================
-   HERO CONTENT (RIGHT)
-   =============================== */
+/* =====================================
+   CONTENT AREA
+   ===================================== */
 
 .hero-content {
-  flex: 0 0 58%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .hero-badge {
-  align-self: flex-start;
-  padding: 6px 16px;
+  width: fit-content;
+  padding: 6px 18px;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: #351EBF;
-  background: rgba(53, 30, 191, 0.08);
+  background: rgba(53, 30, 191, 0.1);
   border-radius: 999px;
 }
 
 .hero-content h1 {
-  font-size: 3.2rem;
-  line-height: 1.2;
+  font-size: 3.1rem;
+  line-height: 1.25;
   font-weight: 700;
   color: #1b1b1b;
 }
@@ -74,19 +73,19 @@
   max-width: 560px;
 }
 
-/* ===============================
+/* =====================================
    CTA
-   =============================== */
+   ===================================== */
 
 .hero-cta {
   display: flex;
-  gap: 16px;
-  margin-top: 8px;
+  gap: 18px;
+  margin-top: 6px;
 }
 
 .btn-primary,
 .btn-secondary {
-  padding: 14px 34px;
+  padding: 14px 36px;
   border-radius: 12px;
   font-size: 0.95rem;
   font-weight: 600;
@@ -96,7 +95,7 @@
 
 .btn-primary {
   background: #351EBF;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn-primary:hover {
@@ -114,34 +113,31 @@
   transform: translateY(-2px);
 }
 
-/* ===============================
-   INFOGRAPHIC (SECONDARY VISUAL)
-   =============================== */
+/* =====================================
+   INFOGRAPHIC IMAGE (SECONDARY)
+   ===================================== */
 
 .hero-infographic {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 
 .hero-infographic img {
   width: 100%;
-  max-width: 480px;   /* SMALLER THAN MAIN IMAGE */
-  height: auto;
-  opacity: 0.92;
+  max-width: 420px;          /* SMALLER THAN MAIN */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;       /* INFOGRAPHIC SAFE */
+  opacity: 0.9;
 }
 
-/* ===============================
-   RESPONSIVE (TABLET & MOBILE)
-   =============================== */
+/* =====================================
+   RESPONSIVE
+   ===================================== */
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .hero-container {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    row-gap: 48px;
     text-align: center;
-  }
-
-  .hero-image,
-  .hero-content {
-    flex: 1 1 100%;
   }
 
   .hero-content {
@@ -149,7 +145,7 @@
   }
 
   .hero-badge {
-    align-self: center;
+    margin: 0 auto;
   }
 
   .hero-subtitle {
@@ -163,15 +159,15 @@
 
 @media (max-width: 576px) {
   .hero {
-    padding: 70px 0;
+    padding: 80px 0;
   }
 
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   .hero-image img {
-    max-width: 300px;
+    max-width: 320px;
   }
 
   .hero-infographic img {
