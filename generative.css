@@ -1,92 +1,93 @@
-/* =========================
-   Generative SEO Hero Section
-   ========================= */
+/* ===============================
+   GENERATIVE SEO HERO – CLEAN V2
+   =============================== */
 
 .hero {
-  background: transparent; /* main background transparent */
-  padding: 90px 20px;
-  display: flex;
-  justify-content: center;
+  background: transparent;
+  padding: 100px 0;
 }
 
 .hero-container {
-  max-width: 1280px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
   align-items: center;
-  gap: 48px;
+  justify-content: space-between;
+  gap: 60px;
 }
 
-/* =========================
-   Hero Image (Main Image)
-   ========================= */
+/* ===============================
+   HERO IMAGE (LEFT)
+   =============================== */
 
 .hero-image {
+  flex: 0 0 42%;
   display: flex;
   justify-content: center;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 440px;   /* FIXED SIZE */
+  max-width: 420px;   /* STRICT LIMIT */
   height: auto;
-  border-radius: 22px;
-  object-fit: cover;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+  object-fit: contain;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
 }
 
-/* =========================
-   Hero Content
-   ========================= */
+/* ===============================
+   HERO CONTENT (RIGHT)
+   =============================== */
 
 .hero-content {
+  flex: 0 0 58%;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .hero-badge {
-  display: inline-block;
-  width: fit-content;
-  padding: 6px 14px;
-  font-size: 0.85rem;
+  align-self: flex-start;
+  padding: 6px 16px;
+  font-size: 0.8rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.8px;
+  text-transform: uppercase;
   color: #351EBF;
-  background: rgba(53, 30, 191, 0.1);
-  border-radius: 20px;
+  background: rgba(53, 30, 191, 0.08);
+  border-radius: 999px;
 }
 
 .hero-content h1 {
-  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  font-size: 3.2rem;
+  line-height: 1.2;
   font-weight: 700;
-  line-height: 1.25;
-  color: #1f1f1f;
+  color: #1b1b1b;
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
-  line-height: 1.65;
+  font-size: 1.15rem;
+  line-height: 1.7;
   color: #444;
   max-width: 560px;
 }
 
-/* =========================
-   CTA Buttons
-   ========================= */
+/* ===============================
+   CTA
+   =============================== */
 
 .hero-cta {
   display: flex;
-  gap: 14px;
-  margin-top: 10px;
+  gap: 16px;
+  margin-top: 8px;
 }
 
 .btn-primary,
 .btn-secondary {
-  padding: 12px 28px;
-  border-radius: 10px;
+  padding: 14px 34px;
+  border-radius: 12px;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -105,7 +106,7 @@
 
 .btn-secondary {
   background: #FBBC04;
-  color: #1a1a1a;
+  color: #111;
 }
 
 .btn-secondary:hover {
@@ -113,33 +114,42 @@
   transform: translateY(-2px);
 }
 
-/* =========================
-   Infographic Image
-   ========================= */
+/* ===============================
+   INFOGRAPHIC (SECONDARY VISUAL)
+   =============================== */
 
 .hero-infographic {
-  margin-top: 28px;
+  margin-top: 32px;
 }
 
 .hero-infographic img {
   width: 100%;
-  max-width: 520px;   /* FIXED INFOGRAPHIC SIZE */
+  max-width: 480px;   /* SMALLER THAN MAIN IMAGE */
   height: auto;
-  opacity: 0.95;
+  opacity: 0.92;
 }
 
-/* =========================
-   Responsive Design
-   ========================= */
+/* ===============================
+   RESPONSIVE (TABLET & MOBILE)
+   =============================== */
 
 @media (max-width: 992px) {
   .hero-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     text-align: center;
+  }
+
+  .hero-image,
+  .hero-content {
+    flex: 1 1 100%;
   }
 
   .hero-content {
     align-items: center;
+  }
+
+  .hero-badge {
+    align-self: center;
   }
 
   .hero-subtitle {
@@ -152,11 +162,19 @@
 }
 
 @media (max-width: 576px) {
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
   .hero-image img {
-    max-width: 320px;
+    max-width: 300px;
   }
 
   .hero-infographic img {
-    max-width: 360px;
+    max-width: 340px;
   }
 }
