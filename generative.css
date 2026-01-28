@@ -25,7 +25,7 @@
 .hero-image {
   display: flex;
   justify-content: left;
-  align-items: left;
+  align-items:center;
 }
 
 .hero-image img {
